@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatheria</title>
+    <link rel="stylesheet" href="./index.css">
+    <script  src="./index.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="imageIcon">
+            <img src="./icon.webp" alt="image" id="icon" onclick="reload()">
+        </div>
+        <div class="locationAndTemp">
+            <h1 id="name"></h1>
+            <h1 id="region"></h1>
+            <h1 id="temperature"></h1>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+        </div>
+    </div>
+    <div class="navbar">
+        <li><a href="">Today</a></li>
+        <li><a href="">Hourly</a></li>
+        <li><a href="">Daily</a></li>
+        <li><a href="">Week</a></li>
+        <li><a href="">Month</a></li>
+    </div>
+        <div class="search">
+        <input placeholder="Search..." type="text" id="searchBar">
+        <button type="submit" id="go">Go</button>
+      </div>
+
+<div class="container">
+    <div class="todaysWeather">
+        <h4>Today's Weather</h4>
+        <h4 id="date"></h4>
+    </div>
+    <div class="information">
+        <h4 id="local_time"></h4>
+        <h4 id="last_updated"></h4>
+        <h4 id="wind_mph"></h4>
+        <h4 id="wind_kph"></h4>
+    </div>
+    <div class="currentWeatherText">
+        <h4>Current Weather</h4>
+        <h4 id="time"></h4>
+    </div>
+    <div class="liveWeather">
+        <img src="iconCloud.png" alt="" srcset="" id="cloudIcon">
+        <h1 id="liveTemprature" style="font-size: 48px;"></h1>
+        <h2 id="condition"></h2>
+    </div>
+    <div class="weatherElementsText">
+        <h2>Weather Elements</h2>
+    </div>
+    <div class="realElements">
+<div class="first">
+    <h1>Feelslike:</h1>
+    <h1 id="realFeel"></h1>
+    <h1>Humidity:</h1>
+    <h1 id="humidity"></h1>
+</div>
+<div class="second">
+    <h1>Visibility:</h1>
+        <h1 id="visibility"></h1>
+    <h1>Precipitation:</h1>
+        <h1 id="precipitation"></h1>
+</div>
+    </div>
+</div>
+</body>
+<script>
+    const reload = () =>{
+        window.location.href = "index.html"
+    }
+</script>
+</html>
